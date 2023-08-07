@@ -1,0 +1,150 @@
+@import url('globalStyle.css');
+@import url('components.css');
+
+.main__container{
+    width: 87vw;
+    
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+
+    top: 104px;
+    margin: 0 auto;
+    padding: var(--padding-20);
+    gap: 2.5rem;   
+    
+}
+
+.profile__container{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+}
+
+form input{
+    height: 52px;
+    padding: var(--padding-20);
+    border: var(--border-2);
+    border-radius: var(--border-radius-4);
+}
+
+form input:focus, textarea:focus{
+    border: var(--border-focus);
+}
+
+form textarea{
+    height: 130px;
+    resize: none;
+    padding: var(--padding-20);
+    border: var(--border-2);
+    border-radius: var(--border-radius-4);    
+}
+
+.follow__container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.5rem;
+}
+
+.sugest__list{
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    overflow-x: auto;
+}
+
+.post__container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.125rem;
+}
+
+.post__list{
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.125rem;
+}
+
+.button__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+p{
+    font: var(--text-1);
+    line-height: 1.75rem;
+    color: var(--gray-2);
+    text-align: justify;    
+}
+
+dialog{
+    border: none;
+    top: 50px;
+    max-height: 500px;
+}
+
+dialog::backdrop{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media(min-width: 1024px){
+    .main__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .profile__container{
+        width: 50%;
+    }
+
+    .follow__container{
+        height: 363px;
+    }
+    .sugest__list{
+        flex-direction: column;
+    }
+
+    .post__container{
+        align-self: baseline;
+    }
+
+    .sugest__item{
+        flex-direction: row;
+        width: 335px;
+        
+    }
+
+    .post__container{
+        max-width: 50%;
+    }
+
+    dialog{
+        border-radius: 8px;
+        max-width: 761px;
+    }
+
+    .modal__container{
+        max-width: 761px;
+        border-radius: 8px;
+    }
+   
+}

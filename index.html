@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script type="module" src="src/scripts/index.js" defer></script>
+
+    <title>Criando rede social</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="src/assets/img/logo.svg" alt="logo">
+      </figure>
+      <button id="logout">Sair</button>
+    </header>
+
+    <main class="main__container">
+      <section class="profile__container">
+        <div class="user__container">
+          <img class="user__img" src="src/assets/img/user1.svg" alt="user1">
+          <div class="title__container">
+            <h2>Samuel leão</h2>
+            <small>Front end Engineer</small>
+          </div>
+        </div>
+        <form>
+          <input name="input" type="text" placeholder="Dgitar titutlo do post">
+          <textarea name="text" placeholder="Digitar descrição do post"></textarea>
+          <button class="post__button">Postar</button>
+        </form>        
+      </section>
+      <!-- <section class="form__container">
+        
+        
+        
+      </section> -->
+      <section class="follow__container">
+        <h2>Sugestões para você seguir</h2>
+        <ul class="sugest__list"></ul>
+        
+      </section>
+      <section class="post__container">
+        <h2>Posts</h2>
+        <ul class="post__list"></ul>
+      </section>
+      <dialog>
+        <div class="modal__container"></div>
+      </dialog>
+    </main>
+  </body>
+</html>

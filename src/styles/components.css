@@ -1,0 +1,148 @@
+.user__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.75rem;
+
+    height: 52px;
+    width: 230px;
+}
+
+.user__img{
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 52px;       
+}
+
+.title__container h2{
+    font: var(--title-2);
+    color: var(--gray-1);
+}
+
+.title__container small{
+    font: var(--text-2);
+    color: var(--gray-2);
+}
+
+.post__button{
+    background-color: var(--gray-4);
+    width: 69px;
+    height: 38px;
+    align-self: flex-end;
+    border: var(--border-2);
+    border-radius: var(--border-radius-4);
+    color: var(--gray-3);
+}
+
+.post__button:hover{
+    background-color: var(--brand-1);
+    color: var(--WhiteFixed);
+    cursor: pointer;
+}
+
+.sugest__item{
+    display: flex;
+    flex-direction: column;
+
+    height: 182px;
+
+    gap: 1rem;
+}
+
+.follow__button--disabled{
+    width: 68px;
+    height: 28px;
+
+    border: 1px solid var(--gray-1);
+    border-radius: 2px;
+
+    background-color: transparent;
+    color: var(--gray-1);
+
+    font: var(--button);
+}
+
+.follow__button--disabled:hover{
+    background-color:  #EDF2FF;
+    color: var(--brand-1);
+    cursor: pointer;
+    border: 1px solid var(--brand-1);
+}
+
+.follow__button--enabled{
+    background-color: var(--brand-1);
+    
+    width: 89px;
+    height: 28px;
+
+    border: 1px solid var(--brand-1);
+    border-radius: 2px;
+
+    color: var(--WhiteFixed);
+
+    font: var(--button);
+}
+
+
+
+.post__item{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.open__post{
+    height: 38px;
+    width: 92px;
+
+    background-color: var(--gray-1);
+    color: var(--WhiteFixed);
+
+    border: 2px solid var(--gray-1);
+    border-radius: var(--border-radius-4);
+}
+
+.like__btn{
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.modal__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.close__modal{
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray-5);
+    color: var(--gray-3);
+    align-self: flex-end;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+.close__modal:hover{
+    background-color: darkred;
+    color: var(--WhiteFixed);
+    cursor: pointer;
+    transition: 0.5s;
+}
